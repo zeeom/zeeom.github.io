@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+SA: I [Moeez Chaudhry], [400264977] certify that this material is my original work.
+No other person's work has been used without due acknowledgement.
+I have also not made my work available to anyone else.
+-->
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moeez Chaudhry | Lab 1</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
-
   <style>
+    :root {
+      --bg-color: #1e1e1e;
+      --text-color: #f5f5f5;
+      --accent-color: #4ea1d3;
+      --container-bg: #2c2c2c;
+      --highlight-bg: #333;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
 
     header {
-      background-color: #003366;
-      color: white;
+      background-color: #121212;
       padding: 20px;
       text-align: center;
+      border-bottom: 2px solid var(--accent-color);
     }
 
     header img {
-      width: 50px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
       vertical-align: middle;
+      margin-right: 10px;
     }
 
-    h1 {
-      display: inline;
-      font-style: italic;
+    header h1 {
+      display: inline-block;
       font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 2rem;
     }
 
     .container {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 40px auto;
       padding: 20px;
-      background: white;
+      background-color: var(--container-bg);
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
 
     h2 {
-      border-bottom: 2px solid #ccc;
+      border-bottom: 2px solid var(--accent-color);
       padding-bottom: 5px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     h3 {
       font-style: italic;
       margin-top: 20px;
+      color: var(--accent-color);
     }
 
     ul {
@@ -59,7 +75,7 @@
     }
 
     a {
-      color: #0066cc;
+      color: var(--accent-color);
       text-decoration: none;
     }
 
@@ -67,35 +83,48 @@
       text-decoration: underline;
     }
 
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: relative;
-      margin-top: 50px;
-    }
-
-    .job {
-      border-left: 4px solid #003366;
-      padding-left: 15px;
+    .job, .hobby {
+      background-color: var(--highlight-bg);
+      padding: 15px;
+      border-radius: 8px;
       margin-bottom: 20px;
+      transition: transform 0.2s ease;
     }
 
-    .hobby {
-      background-color: #eef6f9;
-      padding: 10px;
-      border-radius: 6px;
-      margin-bottom: 10px;
+    .job:hover, .hobby:hover {
+      transform: translateY(-2px);
+    }
+
+    .intro {
+      background-color: var(--highlight-bg);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .intro h2 {
+      color: var(--accent-color);
+    }
+
+    footer {
+      background-color: #121212;
+      color: var(--text-color);
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+      border-top: 2px solid var(--accent-color);
     }
 
     @media screen and (max-width: 600px) {
-      .container {
-        padding: 10px;
-      }
       header h1 {
         display: block;
         margin-top: 10px;
+        font-size: 1.5rem;
+      }
+      .container {
+        padding: 15px;
       }
     }
   </style>
@@ -108,6 +137,16 @@
   </header>
 
   <div class="container">
+
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Moeez Chaudhry</strong>, an aspiring engineer with a strong passion for innovation, technology, and smart systems. Currently studying <em>Automation Engineering - Smart Systems</em> at McMaster University, I thrive on solving complex problems and building practical solutions that make a difference.</p>
+      
+      <p>With hands-on experience in application development, finance, and technical repair, I bring a well-rounded skill set to the table — combining technical expertise with real-world problem-solving and communication. Whether it’s designing IoT systems, optimizing workflows, or mentoring peers, I’m always driven by a desire to learn, grow, and contribute.</p>
+      
+      <p>Outside of work, you’ll find me rock climbing, hiking through trails, or coaching youth soccer — staying active and connecting with others through teamwork and challenge. I’m currently seeking opportunities to further expand my knowledge and apply my skills in meaningful ways.</p>
+    </section>
+
     <h2>Education</h2>
     <ul>
       <li>Louise Arbour Secondary School</li>
@@ -120,9 +159,10 @@
     <div class="job">
       <h3>Application Development Intern - Gokaddal Technologies</h3>
       <ul>
-        <li>Developed IoT applications and cloud solutions using Java and Python</li>
-        <li>Integrated dynamic web features with JavaScript</li>
-        <li>Achieved a 95% bug resolution rate</li>
+        <li>Developed IoT apps and cloud solutions using Java and Python</li>
+        <li>Enhanced system performance by 30%</li>
+        <li>Integrated dynamic JS features, increasing engagement by 25%</li>
+        <li>95% bug resolution via rigorous testing and C++ debugging</li>
       </ul>
       <a href="https://www.gokaddal.com/" target="_blank">Visit Company</a>
     </div>
@@ -130,9 +170,9 @@
     <div class="job">
       <h3>Automotive Technician - Arnold Auto Glass</h3>
       <ul>
-        <li>Auto glass repair and replacement services</li>
-        <li>Customer service excellence</li>
-        <li>Maintained compliance with safety regulations</li>
+        <li>Expert auto glass repair/replacement with 100% customer satisfaction</li>
+        <li>Delivered responsive customer service, enhancing relationships</li>
+        <li>Ensured safety compliance and maintained quality standards</li>
       </ul>
       <a href="https://www.arnoldautoglass.ca/" target="_blank">Visit Company</a>
     </div>
@@ -140,8 +180,9 @@
     <div class="job">
       <h3>Finance Assistant - Tax Plan</h3>
       <ul>
-        <li>Revenue analysis and accounting software migration</li>
-        <li>Monthly reconciliations and reporting</li>
+        <li>Managed AR/AP and full-cycle processing with precision</li>
+        <li>Migrated to new accounting software; boosted efficiency</li>
+        <li>Handled monthly reconciliations & financial reports</li>
       </ul>
       <a href="https://www.taxplann.ca/" target="_blank">Visit Company</a>
     </div>
@@ -149,8 +190,9 @@
     <div class="job">
       <h3>Peer Tutor - Mohawk Student Support Program</h3>
       <ul>
-        <li>Math and science tutoring</li>
-        <li>Helped students improve study habits and confidence</li>
+        <li>Tutored students in math & science</li>
+        <li>Supported students in study skills and confidence-building</li>
+        <li>Collaborated with staff on lesson plans & progress tracking</li>
       </ul>
       <a href="https://www.mohawkcollege.ca/learning-support-centre/peer-tutoring" target="_blank">Visit Program</a>
     </div>
@@ -161,13 +203,15 @@
       <h3>Rock Climbing</h3>
       <p>It’s challenging, rewarding, and keeps me active.</p>
     </div>
+
     <div class="hobby">
       <h3>Hiking</h3>
       <p>I go hiking every summer to explore and disconnect.</p>
     </div>
+
     <div class="hobby">
       <h3>Assistant Coach - Youth Soccer</h3>
-      <p>Helping mentor and train young athletes in team strategy and skills.</p>
+      <p>Helping mentor and train young athletes in strategy and skill-building.</p>
     </div>
   </div>
 
