@@ -1,80 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-SA：I [Moeez Chaudhry], [400264977] certify that this material is my original work.
-No other person's work has been used without due acknowledgement.
-I have also not made my work available to anyone else.
--->
-  <head>
-    <title>[Moeez Chaudhry] [Lab 1]</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      h1, h2, h3, h4, h5, h6 {
-        font-family: "Times New Roman", Times, serif;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 style="font-style: italic;">
-      <img src="image.jpg" width="7%" height="5%" /> &nbsp; &nbsp; &nbsp; &nbsp; Moeez Chaudhry
-    </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moeez Chaudhry | Lab 1</title>
 
-    <h2><u>Education</u></h2>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 50px;
+      vertical-align: middle;
+    }
+
+    h1 {
+      display: inline;
+      font-style: italic;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    h3 {
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      margin-top: 50px;
+    }
+
+    .job {
+      border-left: 4px solid #003366;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    .hobby {
+      background-color: #eef6f9;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      header h1 {
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="image.jpg" alt="Profile Image" />
+    <h1>Moeez Chaudhry</h1>
+  </header>
+
+  <div class="container">
+    <h2>Education</h2>
     <ul>
       <li>Louise Arbour Secondary School</li>
       <li>McMaster University</li>
       <li>Automation Engineering - Smart Systems</li>
     </ul>
 
-    <h2><u>Work</u></h2>
-    <h3 style="font-style: italic;">Application Development Intern - Gokaddal Technologies</h3>
-    <ul>
-      <li>Developed IoT applications and cloud solutions using Java and Python, enhancing system performance by 30%</li>
-      <li>Integrated dynamic web features with JavaScript, increasing user engagement by 25%</li>
-      <li>Achieved a 95% bug resolution rate through comprehensive testing and debugging with C++</li>
-    </ul>
-    <a href="https://www.gokaddal.com/">Gokaddal Technologies</a>
+    <h2>Work</h2>
 
-    <h3 style="font-style: italic;">Automotive Technician - Arnold Auto Glass</h3>
-    <ul>
-      <li>Provided expert auto glass repair and replacement services, ensuring 100% customer satisfaction</li>
-      <li>Delivered exceptional customer service by actively addressing inquiries and concerns, enhancing client relationships</li>
-      <li>Maintained compliance with safety regulations and quality standards, ensuring a safe work environment</li>
-    </ul>
-    <a href="https://www.arnoldautoglass.ca/">Arnold Auto Glass</a>
+    <div class="job">
+      <h3>Application Development Intern - Gokaddal Technologies</h3>
+      <ul>
+        <li>Developed IoT applications and cloud solutions using Java and Python</li>
+        <li>Integrated dynamic web features with JavaScript</li>
+        <li>Achieved a 95% bug resolution rate</li>
+      </ul>
+      <a href="https://www.gokaddal.com/" target="_blank">Visit Company</a>
+    </div>
 
-    <h3 style="font-style: italic;">Finance Assistant - Tax Plan</h3>
-    <ul>
-      <li>Managed revenue analysis, accounts receivable/accounts payable, and full-cycle processing with precision</li>
-      <li>Implemented and migrated to a new accounting software, showcasing adaptability and technological proficiency</li>
-      <li>Conducted monthly reconciliations and financial reporting, ensuring accuracy in financial records</li>
-    </ul>
-    <a href="https://www.taxplann.ca/">Tax Plan</a>
+    <div class="job">
+      <h3>Automotive Technician - Arnold Auto Glass</h3>
+      <ul>
+        <li>Auto glass repair and replacement services</li>
+        <li>Customer service excellence</li>
+        <li>Maintained compliance with safety regulations</li>
+      </ul>
+      <a href="https://www.arnoldautoglass.ca/" target="_blank">Visit Company</a>
+    </div>
 
-    <h3 style="font-style: italic;">Peer Tutor - Mohawk Student Support Program</h3>
-    <ul>
-      <li>Provided tutoring and academic support to students from diverse backgrounds in math and science</li>
-      <li>Offered guidance and support to students in developing effective study habits and boosting their confidence</li>
-      <li>Contributed to the design of lesson plans and collaborated with staff to assess student development</li>
-    </ul>
-    <a href="https://www.mohawkcollege.ca/learning-support-centre/peer-tutoring">Mohawk Student Support Program</a> 
+    <div class="job">
+      <h3>Finance Assistant - Tax Plan</h3>
+      <ul>
+        <li>Revenue analysis and accounting software migration</li>
+        <li>Monthly reconciliations and reporting</li>
+      </ul>
+      <a href="https://www.taxplann.ca/" target="_blank">Visit Company</a>
+    </div>
 
-    <h2><u>Hobbies</u></h2>
-    <h3 style="font-style: italic;">Rockclimbing</h3>
-    <ul>
-      <li>I like to rockclimb because it is challenging</li>
-    </ul>
-    <h3 style="font-style: italic;">Hiking</h3>
-    <ul>
-      <li>I like to go hiking during the summer</li>
-    </ul>
-    <h3 style="font-style: italic;">Assistant Coach - Youth Soccer</h3>
-    <ul>
-      <li>I am currently an Assistant Coach for youth soccer, where I enjoy developing strategies and mentoring players</li>
-    </ul>
+    <div class="job">
+      <h3>Peer Tutor - Mohawk Student Support Program</h3>
+      <ul>
+        <li>Math and science tutoring</li>
+        <li>Helped students improve study habits and confidence</li>
+      </ul>
+      <a href="https://www.mohawkcollege.ca/learning-support-centre/peer-tutoring" target="_blank">Visit Program</a>
+    </div>
 
-    <footer>&copy; Moeez Chaudhry</footer>
-  </body>
+    <h2>Hobbies</h2>
+
+    <div class="hobby">
+      <h3>Rock Climbing</h3>
+      <p>It’s challenging, rewarding, and keeps me active.</p>
+    </div>
+    <div class="hobby">
+      <h3>Hiking</h3>
+      <p>I go hiking every summer to explore and disconnect.</p>
+    </div>
+    <div class="hobby">
+      <h3>Assistant Coach - Youth Soccer</h3>
+      <p>Helping mentor and train young athletes in team strategy and skills.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Moeez Chaudhry
+  </footer>
+</body>
 </html>
